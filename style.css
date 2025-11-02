@@ -45,7 +45,6 @@ nav {
     top: 0;
     z-index: 100;
     box-shadow: 0 0 12px 8px var(--dusty-rose);
-    position: relative;
 }
 
 .nav-wrapper {
