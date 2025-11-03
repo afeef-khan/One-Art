@@ -259,3 +259,14 @@ window.addEventListener('scroll', () => {
         nav.style.backdropFilter = 'none';
     }
 });
+
+
+// -------
+
+// Animate testimonial cards - fade up with stagger
+    document.querySelectorAll('.masonry-item').forEach((item, index) => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(50px)';
+        item.style.transition = `opacity 0.7s ease ${index * 0.1}s, transform 0.7s ease ${index * 0.1}s`;
+        fadeUpObserver.observe(item);
+    });
